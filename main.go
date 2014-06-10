@@ -20,6 +20,7 @@ var path = flag.String(`path`, `.`, `path that will be served`)
 
 func main() {
 	flag.Parse()
+	envPort := os.Getenv("PORT")
 	servePort := (map[bool]string{true: envPort, false: *port})[envPort != ``]
 	//ternary[ish] operator babe!
 
