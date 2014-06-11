@@ -10,11 +10,14 @@ A go implementation of python's SimpleHTTPServer
 Just run `goSimpleServer` to start serving files in the current directory on port `8080`
 
 ###Flags
-Flag    | Default |  Behaviour
---------|:-------:| ------
-`-p`    | `8080`  | Port<br>[may be overridden also with the environment variable PORT]
-`--path`| `.`     | Specifies the path to be served
-
+Flag       | Default |  Behaviour
+-----------|:-------:| ------
+`-p`       | `8080`  | Port<br>[may be overridden also with the environment variable PORT]
+`--path`   | `.`     | Specifies the path to be served
+`--nocache`| `true`  | Specifies if no-cache header is sent*
+>*Note: nocache flag needs '=' preceding the value  
+>example: `goSimpleServer --nocache=false`   
+>otherwise it won't work.
 
 ###License
 ```
