@@ -26,7 +26,6 @@ func main() {
 	//ternary[ish] operator babe!
 
 	servePort = fmt.Sprintf(":%v", servePort)
-	fmt.Println("NOCACHE", *disableCache)
 	setHeaders := func(h http.Handler) http.HandlerFunc {
 		return func(w http.ResponseWriter, r *http.Request) {
 			if *disableCache {

@@ -3,7 +3,7 @@
 A go implementation of python's SimpleHTTPServer
 
 ##Install:
-
+`go get -u github.com/worg/goSimpleServer`  
 `go install github.com/worg/goSimpleServer`
 
 ##Basic Usage
